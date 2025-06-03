@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper,Scissors</title>
+    <link rel="stylesheet" href="./RPS-project.css">
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="items-box">            
+            <h1>Choose your weapon</h1>
+            <div class="img-container">
+                <img src="./pics/rock.jpg" alt="rock" class="img-items" id="rock">
+                <img src="./pics/paper.jpg" alt="paper" class="img-items" id="paper">
+                <img src="./pics/scissor.jpg" alt="scissor" class="img-items" id="scissors">
+            </div>
+            <h2>Cpu choosed</h2>
+            <div class="cpu-img-container">
+                <img src="./pics/rock.jpg" alt="rock" class="img-cpu-choosed" hidden id="cpu-rock">
+                <img src="./pics/paper.jpg" alt="paper" class="img-cpu-choosed" hidden id="cpu-paper">
+                <img src="./pics/scissor.jpg" alt="scissor" class="img-cpu-choosed" hidden id="cpu-scissors">
+            </div>
+        </div>
+
+        <div class="result-box">
+            <h1>Points:</h1>
+            <div class="result-container">
+                <div class="user-point-container">
+                    <h2>User:</h2>
+                    <div id="user-point">0</div>
+                </div>
+                <div class="cpu-point-container">
+                    <h2>Cpu:</h2>
+                    <div id="cpu-point">0</div>
+                </div>
+                <div class="msg hidden" id="user-won-msg">User won!</div>
+                <div class="msg hidden" id="cpu-won-msg">Cpu won!</div>
+            </div>
+            <button class="button" id="start-button">Start</button>
+            <button class=" button hidden" id="refresh-button">Refresh</button>
+            <button class="button hidden" id="reset-button">Reset</button>
+        </div>
+    </div>
+<script src="./RPS-project.js"></script>
+</body>
+</html>
